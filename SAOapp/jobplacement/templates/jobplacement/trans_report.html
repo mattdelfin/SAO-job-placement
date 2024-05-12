@@ -1,0 +1,43 @@
+{% extends 'index.html' %}
+
+{% block headercontent %}
+    {% load static %}
+  <link rel="stylesheet" href="{% static 'jobplacement/styles/trans_rep.css' %}">
+{% endblock headercontent %}
+
+{% block bodycontent %}
+<section >
+  <h1>Transactions Report</h1>
+
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Amount</th>
+      <th>Account or Category</th>
+      <th>Remarks</th>
+      <th>References/Notes</th>
+    </tr>
+    <tr>
+      <td>2024-05-01</td>
+      <td>Online purchase - Amazon</td>
+      <td>$50.00</td>
+      <td>Shopping</td>
+      <td>Ordered new book</td>
+      <td>Order ID: 12345</td>
+    </tr>
+    <tr>
+      <td>2024-05-02</td>
+      <td>Utility bill payment</td>
+      <td>-$100.00</td>
+      <td>Utilities</td>
+      <td>Electricity bill for April</td>
+      <td>Transaction ID: 67890</td>
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+
+</section>
+{% endblock bodycontent %}
+</body>
+</html>
