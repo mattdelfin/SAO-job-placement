@@ -1,0 +1,93 @@
+{% extends 'index.html' %}
+
+{% block headcontent %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/ojthiring.css' %}?244">
+    <script src="{% static '/scripts/ojthiring_show.js' %}"></script>
+{% endblock headcontent %} 
+    
+{% block section_content %}
+    {% load static %}
+    <section>
+        <div class = "intro">
+            <p>CTU - Argao Offers Intership Programs!</p>
+        </div>
+        <div id = "desc">
+            <p>CTU - Argao offers internship opportunities for students who may be interested in further developing their skills</p>
+        </div>
+
+        <div class = "company">
+            <div class = "company_name">
+                <p>Company 1</p>
+                <p>Job Position</p>
+                <div class ="image">
+                    <img src="{% static '/imgs/img10.jpg' %}" alt="arrow">
+                </div> 
+                <div class ="company_desc">           
+                    <ul>
+                        <li>contact</li>
+                        <li>email</li>
+                        <li>short desc</li>
+                    </ul>
+                </div>
+                <button onclick="toggleCard()">Show Card</button>
+                <div class="card">
+                    <div id="card_container">
+                      <h4><b>Company 1</b></h4> 
+                      <p>Diri guro ibutang uban nga info, or ang form</p> 
+                    </div>
+                </div>
+            </div>
+            <div class = "company_name">
+                    <p>Company 1</p>
+                <div class ="company_desc">           
+                    <ul>
+                        <li>contact</li>
+                        <li>email</li>
+                        <li>short desc</li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "company_name">
+                <p>Company 1</p>
+                <div class ="company_desc">           
+                    <ul>
+                        <li>contact</li>
+                        <li>email</li>
+                        <li>short desc</li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "company_name">
+                <p>Company 1</p>
+                <div class ="company_desc">           
+                    <ul>
+                        <li>contact</li>
+                        <li>email</li>
+                        <li>short desc</li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "company_name">
+                <p>Company 1</p>
+                <div class ="company_desc">           
+                    <ul>
+                        <li>contact</li>
+                        <li>email</li>
+                        <li>short desc</li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "company_name">
+                <p>Company 1</p>
+                <div class ="company_desc">           
+                    <ul>
+                        <li>contact</li>
+                        <li>email</li>
+                        <li>short desc</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock section_content %}
